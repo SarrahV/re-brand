@@ -5,10 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+@import "base/customizations";
 // Core variables and mixins
 @import "variables";
 @import "mixins";
-@import "custom";
 
 // Reset and dependencies
 @import "normalize";
