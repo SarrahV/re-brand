@@ -155,16 +155,17 @@ $path: "../../scss/base/";
 // Grayscale and brand colors for use across Bootstrap.
 
 // Start with assigning color names to specific hex values.
-$white:  #fff !default;
-$black:  #000 !default;
-$red:    #ab3225;
-$orange: #ee641a;
-$yellow: #ffd500 !default;
-$green:  #5cb85c !default;
-$blue:   #0275d8 !default;
-$teal:   #5bc0de !default;
-$pink:   #ff5b77 !default;
-$purple: #613d7c !default;
+$white:     #fff !default;
+$black:     #000 !default;
+$not-black: #141416;
+$red:       #ab3225;
+$orange:    #ee641a;
+$yellow:    #ffd500 !default;
+$green:     #5cb85c !default;
+$blue:      #0275d8 !default;
+$teal:      #5bc0de !default;
+$pink:      #ff5b77 !default;
+$purple:    #613d7c !default;
 
 // Create grayscale
 $gray-dark:                 #292b2c !default;
@@ -245,7 +246,7 @@ $sizes: (
 // Settings for the `<body>` element.
 
 $body-bg:       $white !default;
-$body-color:    $gray-dark !default;
+$body-color:    $not-black !default;
 $inverse-bg:    $gray-dark !default;
 $inverse-color: $gray-lighter !default;
 
@@ -318,8 +319,11 @@ $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
 
-$font-weight-normal: normal !default;
-$font-weight-bold: bold !default;
+$font-weight-light:  300;
+$font-weight-normal: 500;
+$font-weight-semi:   600;
+$font-weight-bold:   700;
+$font-weight-black:  900;
 
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;

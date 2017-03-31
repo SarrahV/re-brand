@@ -402,9 +402,9 @@ html {
 body {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.5;
-  color: #292b2c;
+  color: #141416;
   background-color: #fff;
 }
 
@@ -448,7 +448,7 @@ ul ol {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 dd {
@@ -665,7 +665,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 mark,
@@ -793,7 +793,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 100%;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 pre {
@@ -2702,7 +2702,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn {
   display: inline-block;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.25;
   text-align: center;
   white-space: nowrap;
@@ -3105,7 +3105,7 @@ fieldset[disabled] a.btn {
 }
 
 .btn-link {
-  font-weight: normal;
+  font-weight: 500;
   color: #ee641a;
   border-radius: 0;
 }
@@ -3236,7 +3236,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #292b2c;
+  color: #141416;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3258,7 +3258,7 @@ tbody.collapse.show {
   width: 100%;
   padding: 3px 1.5rem;
   clear: both;
-  font-weight: normal;
+  font-weight: 500;
   color: #292b2c;
   text-align: inherit;
   white-space: nowrap;
@@ -3574,7 +3574,7 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.25;
   color: #979797;
   text-align: center;
@@ -4918,7 +4918,7 @@ tbody.collapse.show {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -5128,7 +5128,7 @@ a.badge:focus, a.badge:hover {
 }
 
 .list-group-item-action:active {
-  color: #292b2c;
+  color: #141416;
   background-color: #eceeef;
 }
 
@@ -5375,7 +5375,7 @@ button.list-group-item-danger.active {
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -5564,7 +5564,7 @@ button.close {
   display: block;
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: normal;
   line-break: auto;
   line-height: 1.5;
@@ -5668,7 +5668,7 @@ button.close {
   padding: 1px;
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: normal;
   line-break: auto;
   line-height: 1.5;
@@ -9137,11 +9137,11 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .font-weight-normal {
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .font-weight-bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .font-italic {
@@ -9312,11 +9312,36 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
-.nav {
+.nav a {
+  color: #141416;
   font-size: 1rem;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .1em;
 }
 
 .ns-logo {
-  max-width: 550px;
+  max-width: 242px;
+}
+
+.ns-u-font-light {
+  font-weight: 300;
+}
+
+.ns-u-font-reg {
+  font-weight: 500;
+}
+
+.ns-u-font-semi {
+  font-weight: 600;
+}
+
+.ns-u-font-bold {
+  font-weight: 700;
+}
+
+.ns-u-font-black {
+  font-weight: 900;
 }
 /*# sourceMappingURL=bootstrap.css.map */

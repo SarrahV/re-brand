@@ -329,9 +329,9 @@ html {
 body {
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1.5;
-  color: #292b2c;
+  color: #141416;
   background-color: #fff;
 }
 
@@ -375,7 +375,7 @@ ul ol {
 }
 
 dt {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 dd {
