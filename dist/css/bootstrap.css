@@ -4,6 +4,69 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@font-face {
+  font-family: "Open Sans";
+  font-style: initial;
+  font-weight: 900;
+  src: url("fonts/open_sans/opensans-extrabold.eot?") format("eot"), url("fonts/open_sans/opensans-extrabold.woff2") format("woff2"), url("fonts/open_sans/opensans-extrabold.woff") format("woff"), url("fonts/open_sans/opensans-extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: initial;
+  font-weight: 700;
+  src: url("fonts/open_sans/opensans-bold.eot?") format("eot"), url("fonts/open_sans/opensans-bold.woff2") format("woff2"), url("fonts/open_sans/opensans-bold.woff") format("woff"), url("fonts/open_sans/opensans-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: initial;
+  font-weight: 400;
+  src: url("fonts/open_sans/opensans-regular.eot?") format("eot"), url("fonts/open_sans/opensans-regular.woff2") format("woff2"), url("fonts/open_sans/opensans-regular.woff") format("woff"), url("fonts/open_sans/opensans-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: initial;
+  font-weight: 300;
+  src: url("fonts/open_sans/opensans-light.eot?") format("eot"), url("fonts/open_sans/opensans-light.woff2") format("woff2"), url("fonts/open_sans/opensans-light.woff") format("woff"), url("fonts/open_sans/opensans-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: initial;
+  font-weight: 900;
+  src: url("fonts/roboto/roboto-black.eot?") format("eot"), url("fonts/roboto/roboto-black.woff2") format("woff2"), url("fonts/roboto/roboto-black.woff") format("woff"), url("fonts/roboto/roboto-black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: initial;
+  font-weight: 700;
+  src: url("fonts/roboto/roboto-bold.eot?") format("eot"), url("fonts/roboto/roboto-bold.woff2") format("woff2"), url("fonts/roboto/roboto-bold.woff") format("woff"), url("fonts/roboto/roboto-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: initial;
+  font-weight: 500;
+  src: url("fonts/roboto/roboto-medium.eot?") format("eot"), url("fonts/roboto/roboto-medium.woff2") format("woff2"), url("fonts/roboto/roboto-medium.woff") format("woff"), url("fonts/roboto/roboto-medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: initial;
+  font-weight: 400;
+  src: url("fonts/roboto/roboto-regular.eot?") format("eot"), url("fonts/roboto/roboto-regular.woff2") format("woff2"), url("fonts/roboto/roboto-regular.woff") format("woff"), url("fonts/roboto/roboto-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: initial;
+  font-weight: 300;
+  src: url("fonts/roboto/roboto-light.eot?") format("eot"), url("fonts/roboto/roboto-light.woff2") format("woff2"), url("fonts/roboto/roboto-light.woff") format("woff"), url("fonts/roboto/roboto-light.ttf") format("truetype");
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -331,7 +394,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -526,7 +589,7 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -4829,7 +4892,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4933,7 +4996,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
