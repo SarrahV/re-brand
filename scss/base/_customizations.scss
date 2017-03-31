@@ -123,17 +123,23 @@
 @include font-face('Open Sans', fonts/open_sans/opensans-regular, 400, initial, eot woff2 woff ttf);
 
 // Light
-@include font-face('Open Sans', fonts/open_sans/latoLight, 300, initial, eot woff2 woff ttf);
+@include font-face('Open Sans', fonts/open_sans/opensans-light, 300, initial, eot woff2 woff ttf);
 
 // Include Rawline Font Styles and Weights
 // Bold
-@include font-face('rawline', #{$path}/public/fonts/rawline/rawline-700, 700, initial, eot woff2 woff ttf);
+@include font-face('Roboto', fonts/roboto/roboto-black, 900, initial, eot woff2 woff ttf);
 
-// // Semi-Bold
-@include font-face('rawline', #{$path}/public/fonts/rawline/rawline-600, 600, initial, eot woff2 woff ttf);
+// Semi-Bold
+@include font-face('Roboto', fonts/roboto/roboto-bold, 700, initial, eot woff2 woff ttf);
 
-// // Regular
-@include font-face('rawline', #{$path}/public/fonts/rawline/rawline-400, 400, initial, eot woff2 woff ttf);
+// Medium
+@include font-face('Roboto', fonts/roboto/roboto-medium, 500, initial, eot woff2 woff ttf);
+
+// Regular
+@include font-face('Roboto', fonts/roboto/roboto-regular, 400, initial, eot woff2 woff ttf);
+
+// Light
+@include font-face('Roboto', fonts/roboto/roboto-light, 300, initial, eot woff2 woff ttf);
 
 
 
@@ -299,10 +305,11 @@ $grid-gutter-widths: (
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif !default;
+$font-family-sans-serif:         'Open Sans', "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif-heading: 'Roboto', "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:               Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:           Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:                $font-family-sans-serif !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;
@@ -323,7 +330,7 @@ $font-size-h5: 1.25rem !default;
 $font-size-h6: 1rem !default;
 
 $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family:   inherit !default;
+$headings-font-family:   $font-family-sans-serif-heading;
 $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
 $headings-color:         inherit !default;
