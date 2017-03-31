@@ -9311,4 +9311,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important;
   }
 }
+
+.nav {
+  font-size: 1rem;
+}
+
+.ns-logo {
+  max-width: 550px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
