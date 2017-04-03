@@ -9378,6 +9378,12 @@ a:hover, a :focus {
   }
 }
 
+@media (max-width: 768px) {
+  .menu-left a {
+    padding: 20px 0;
+  }
+}
+
 .menu-left a:before {
   content: '';
   display: block;
@@ -9426,7 +9432,6 @@ header {
   top: 60px;
   left: 0;
   width: 100%;
-  padding: .5rem 0;
   background: rgba(255, 255, 255, 0.92);
   z-index: 3;
   will-change: transform;
@@ -9537,7 +9542,7 @@ ul.menu-left:before {
 }
 
 ul.menu-left.collapse {
-  max-height: 15em !important;
+  max-height: 22em !important;
 }
 
 .nav-toggle {

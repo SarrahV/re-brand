@@ -49,6 +49,10 @@ a {
     padding: 20px 35px;
   }
 
+  @media (max-width: 768px) {
+    padding: 20px 0;
+  }
+
   &:before {
     content: '';
     display:block;
@@ -90,7 +94,6 @@ header {
   top: 60px;
   left: 0;
   width: 100%;
-  padding: .5rem 0;
   background: rgba(255, 255, 255, .92);
   z-index: 3;
   will-change: transform;
@@ -145,7 +148,6 @@ header {
 
           @media (min-width: 576px) {
             display: block;
-            // padding: .425rem 0rem;
           }
         }
       }
@@ -194,7 +196,7 @@ ul.menu-left {
   }
 
   &.collapse {
-    max-height: 15em!important;
+    max-height: 22em!important;
   }
 }
 
