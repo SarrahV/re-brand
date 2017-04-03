@@ -9312,6 +9312,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+body {
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
 .container {
   padding: 0px 15px 0px 15px;
   margin-left: auto;
@@ -9365,6 +9371,7 @@ a:hover, a :focus {
 }
 
 .menu-left a {
+  text-decoration: none;
   position: relative;
   padding: 20px 12px;
   -webkit-transition: color .35s ease;
@@ -9589,10 +9596,6 @@ ul.menu-left.collapse {
   -webkit-transition: all .25s;
   -o-transition: all .25s;
   transition: all .25s;
-}
-
-.ns-logo {
-  max-width: 242px;
 }
 
 .ns-u-font-light {
