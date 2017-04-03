@@ -1,11 +1,24 @@
+.navbar {
+    margin-top: 80px;
+    padding: 0 60px;
+}
+
 .nav {
 
+  border-top: 1px solid $gray;
+
   a {
+    display: block;
+    padding: 20px 35px;
     color: $not-black;
     font-size: 1rem;
     font-family: $font-family-sans-serif-heading;
     font-weight: $font-weight-black;
     text-transform: uppercase;
     letter-spacing: .1em;
+
+    &.active {
+      color: $brand-primary;
+    }
   }
 }

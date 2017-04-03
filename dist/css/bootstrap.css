@@ -9312,13 +9312,28 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   }
 }
 
+.navbar {
+  margin-top: 80px;
+  padding: 0 60px;
+}
+
+.nav {
+  border-top: 1px solid #979797;
+}
+
 .nav a {
+  display: block;
+  padding: 20px 35px;
   color: #141416;
   font-size: 1rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: .1em;
+}
+
+.nav a.active {
+  color: #ee641a;
 }
 
 .ns-logo {
