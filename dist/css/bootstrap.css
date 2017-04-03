@@ -9329,8 +9329,20 @@ body {
   transition: all .5s ease-in-out;
 }
 
+.ns-container {
+  margin-top: 160px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+
 .ns-header {
-  padding: 0px 15px 0px 15px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   margin-left: auto;
   margin-right: auto;
 }
@@ -9613,14 +9625,90 @@ ul.ns-header_menu.ns-header--collapse {
   transition: all .25s;
 }
 
+footer {
+  width: 100%;
+  background-color: rgba(7, 7, 7, 0.05);
+}
+
 .ns-footer {
+  height: 380px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
   /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 0) {
+  .ns-footer {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .ns-footer {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ns-footer {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ns-footer {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ns-footer {
+    max-width: 1170px;
+  }
+}
+
+.ns-footer h6 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.ns-footer_col {
+  margin: 50px 25px 0 0;
+  padding: 0;
+}
+
+.ns-footer_links {
+  margin: 0;
+  padding: 0;
+}
+
+.ns-footer_links li {
+  list-style-type: none;
+}
+
+.ns-footer_links a {
+  color: #141416;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.ns-footer_map-container {
+  padding: 0;
+}
+
+.ns-footer_map {
   width: 100%;
-  background-color: rgba(7, 7, 7, 0.05);
+  height: 300px;
+  background-color: grey;
+}
+
+.ns-footer_map .gm-fullscreen-control, .ns-footer_map .gm-svpc, .ns-footer_map .gmnoprint, .ns-footer_map .gm-style-mtc {
+  display: none !important;
 }
 
 .ns-u-font-light {

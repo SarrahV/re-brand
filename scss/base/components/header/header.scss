@@ -1,7 +1,7 @@
 
 // Container
 .ns-header {
-  padding: 0px 15px 0px 15px;
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   margin-left: auto;
   margin-right: auto;
 
