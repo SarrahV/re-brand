@@ -10,10 +10,10 @@
 ***********************************************************/
 
 // NAVIGATION LOGO SCROLL TOP
-$('.logo').on('click', function(e) {
+$('.ns-header_logo').on('click', function(e) {
   e.preventDefault();
-  $('.nav-toggle').removeClass('open');
-  $('.menu-left').removeClass('collapse');
+  $('.ns-header_nav-toggle').removeClass('ns-header--open');
+  $('.ns-header_menu').removeClass('ns-header--collapse');
   $('html, body').animate({
     scrollTop: 0
   }, 750, 'easeInOutQuad')
@@ -32,14 +32,14 @@ $('a[href^="#"]').on('click', function(event) {
 });
 
 // TOGGLE HAMBURGER & COLLAPSE NAV
-$('.nav-toggle').on('click', function() {
-  $(this).toggleClass('open');
-  $('.menu-left').toggleClass('collapse');
+$('.ns-header_nav-toggle').on('click', function() {
+  $(this).toggleClass('ns-header--open');
+  $('.ns-header_menu').toggleClass('ns-header--collapse');
 });
 // REMOVE X & COLLAPSE NAV ON ON CLICK
-$('.menu-left a').on('click', function() {
-  $('.nav-toggle').removeClass('open');
-  $('.menu-left').removeClass('collapse');
+$('.ns-header_menu a').on('click', function() {
+  $('.ns-header_nav-toggle').removeClass('ns-header--open');
+  $('.ns-header_menu').removeClass('ns-header--collapse');
 });
 
 // SHOW/HIDE NAV
@@ -72,13 +72,13 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('header').removeClass('show-nav').addClass('hide-nav');
-        $('.nav-toggle').removeClass('open');
-        $('.menu-left').removeClass('collapse');
+        $('header').removeClass('show-nav').addClass('ns-header--hide');
+        $('.ns-header_nav-toggle').removeClass('ns-header--open');
+        $('.ns-header_menu').removeClass('ns-header--collapse');
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('hide-nav').addClass('show-nav');
+            $('header').removeClass('ns-header--hide').addClass('show-nav');
         }
     }
 
