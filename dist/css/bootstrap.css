@@ -9366,10 +9366,16 @@ a:hover, a :focus {
 
 .menu-left a {
   position: relative;
-  padding: 20px 35px;
+  padding: 20px 12px;
   -webkit-transition: color .35s ease;
   -o-transition: color .35s ease;
   transition: color .35s ease;
+}
+
+@media (min-width: 992px) {
+  .menu-left a {
+    padding: 20px 35px;
+  }
 }
 
 .menu-left a:before {
@@ -9437,7 +9443,24 @@ header {
 
 header nav .logo {
   float: left;
-  max-width: 245px;
+}
+
+@media (min-width: 0) {
+  header nav .logo {
+    max-width: 170px;
+  }
+}
+
+@media (min-width: 992px) {
+  header nav .logo {
+    max-width: 210px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header nav .logo {
+    max-width: 245px;
+  }
 }
 
 header nav .logo:after {
