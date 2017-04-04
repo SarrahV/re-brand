@@ -11,6 +11,7 @@ footer {
 
   @media (min-width: 0) {
     max-width: 100%;
+    padding: 0 15px;
   }
   @media (min-width: 576px) {
     max-width: 540px;
@@ -32,8 +33,24 @@ footer {
 }
 
 .ns-footer_col {
-  margin: 50px 25px 0 0;
+  margin: 50px 0 0 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    margin: 25px 0 0 0;
+  }
+
+  div {
+    margin-right: 35px;
+
+    @media (max-width: 992px) {
+      margin-right: 12px;
+      padding-bottom: 20px;
+    }
+  }
 }
 
 .ns-footer_links {
@@ -46,7 +63,7 @@ footer {
 
   a {
     color: $not-black;
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     font-weight: $font-weight-normal;
     text-transform: capitalize;
     text-decoration: none;
@@ -54,9 +71,11 @@ footer {
 }
 
 .ns-footer_map-container {
+  flex-grow: 0;
   padding: 0;
   border: 1px solid $gray-lighter;
   margin-top: 40px;
+  align-self: flex-start;
 }
 
 .ns-footer_map {

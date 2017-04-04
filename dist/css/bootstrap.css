@@ -623,7 +623,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1rem;
+  font-size: 0.89rem;
 }
 
 .lead {
@@ -9350,6 +9350,7 @@ body {
 @media (min-width: 0) {
   .ns-header {
     max-width: 100%;
+    padding: 0 15px;
   }
 }
 
@@ -9536,10 +9537,10 @@ header nav ul li a {
 }
 
 @media (max-width: 768px) {
-  ul {
+  header ul {
     clear: both;
   }
-  ul li {
+  header ul li {
     padding: .5em 0;
   }
 }
@@ -9643,6 +9644,7 @@ footer {
 @media (min-width: 0) {
   .ns-footer {
     max-width: 100%;
+    padding: 0 15px;
   }
 }
 
@@ -9676,8 +9678,39 @@ footer {
 }
 
 .ns-footer_col {
-  margin: 50px 25px 0 0;
+  margin: 50px 0 0 0;
   padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 900px) {
+  .ns-footer_col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 25px 0 0 0;
+  }
+}
+
+.ns-footer_col div {
+  margin-right: 35px;
+}
+
+@media (max-width: 992px) {
+  .ns-footer_col div {
+    margin-right: 12px;
+    padding-bottom: 20px;
+  }
 }
 
 .ns-footer_links {
@@ -9691,16 +9724,23 @@ footer {
 
 .ns-footer_links a {
   color: #141416;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 500;
   text-transform: capitalize;
   text-decoration: none;
 }
 
 .ns-footer_map-container {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   padding: 0;
   border: 1px solid #cccccc;
   margin-top: 40px;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
 }
 
 .ns-footer_map {
