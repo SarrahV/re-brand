@@ -4,7 +4,7 @@ footer {
 }
 
 .ns-footer {
-  height: 380px;
+  height: 430px;
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   margin-left: auto;
   margin-right: auto;
@@ -86,4 +86,48 @@ footer {
   .gm-fullscreen-control, .gm-svpc, .gmnoprint, .gm-style-mtc {
     display: none !important;
   }
+ }
+
+ .ns-footer_copyright {
+    height: 50px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 0) {
+      width: 100%;
+      padding: 0 15px;
+    }
+    @media (min-width: 576px) {
+      width: 540px;
+    }
+    @media (min-width: 768px) {
+      width: 720px;
+    }
+    @media (min-width: 992px) {
+      width: 960px;
+    }
+    @media (min-width: 1200px) {
+      width: 1170px;
+    }
+
+ }
+
+ .ns-footer_copyright-text {
+   width: 50%;
+   font-weight: $font-weight-light;
+   font-size: 0.6875rem;
+
+   @media (max-width: 510px) {
+     width: 100%;
+   }
+
+   a {
+     font-weight: $font-weight-light;
+     font-size: 0.6875rem;
+   }
  }

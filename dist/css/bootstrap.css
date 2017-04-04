@@ -9327,6 +9327,11 @@ body {
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 0.45px;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+  text-shadow: #fff 0px 1px 1px;
 }
 
 .ns-container {
@@ -9632,7 +9637,7 @@ footer {
 }
 
 .ns-footer {
-  height: 380px;
+  height: 430px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -9751,6 +9756,77 @@ footer {
 
 .ns-footer_map .gm-fullscreen-control, .ns-footer_map .gm-svpc, .ns-footer_map .gmnoprint, .ns-footer_map .gm-style-mtc {
   display: none !important;
+}
+
+.ns-footer_copyright {
+  height: 50px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 0) {
+  .ns-footer_copyright {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .ns-footer_copyright {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ns-footer_copyright {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ns-footer_copyright {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ns-footer_copyright {
+    width: 1170px;
+  }
+}
+
+.ns-footer_copyright-text {
+  width: 50%;
+  font-weight: 300;
+  font-size: 0.6875rem;
+}
+
+@media (max-width: 510px) {
+  .ns-footer_copyright-text {
+    width: 100%;
+  }
+}
+
+.ns-footer_copyright-text a {
+  font-weight: 300;
+  font-size: 0.6875rem;
 }
 
 .ns-u-font-light {
