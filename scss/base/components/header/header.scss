@@ -97,7 +97,6 @@ header {
   top: 60px;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, .92);
   z-index: 3;
   will-change: transform;
   transition: background .3s,
@@ -171,8 +170,8 @@ header {
 
 
 .ns-header--hide {
-  transform: translateY(-120%!important);
-  -webkit-transform: translateY(-120%)!important;
+  transform: translateY(-140%!important);
+  -webkit-transform: translateY(-140%)!important;
 }
 
 ul.ns-header_menu {

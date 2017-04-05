@@ -9335,12 +9335,13 @@ body {
 }
 
 .ns-container {
-  margin-top: 160px;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
 .ns-header {
@@ -9472,7 +9473,6 @@ header {
   top: 60px;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.92);
   z-index: 3;
   will-change: transform;
   transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
@@ -9551,9 +9551,9 @@ header nav ul li a {
 }
 
 .ns-header--hide {
-  -o-transform: translateY(-120% !important);
-     transform: translateY(-120% !important);
-  -webkit-transform: translateY(-120%) !important;
+  -o-transform: translateY(-140% !important);
+     transform: translateY(-140% !important);
+  -webkit-transform: translateY(-140%) !important;
 }
 
 ul.ns-header_menu {
@@ -9827,6 +9827,97 @@ footer {
 .ns-footer_copyright-text a {
   font-weight: 300;
   font-size: 0.6875rem;
+}
+
+.ns-hero {
+  background-image: url(../../public/img/light-home-img.jpg);
+}
+
+.ns-hero .bg {
+  height: 100vh;
+  width: 100%;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.ns-hero .divider {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: -1px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.ns-hero .divider > div {
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.ns-hero .divider > div > div {
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 100%;
+}
+
+.ns-hero .divider > div:first-child {
+  -webkit-transform: skewX(81deg);
+  -webkit-transform-origin: left bottom;
+}
+
+.ns-hero .divider > div:first-child > div {
+  -webkit-transform: skewX(-81deg);
+  -webkit-transform-origin: left bottom;
+}
+
+.ns-hero .divider > div:last-child {
+  -webkit-transform: skewX(-81deg);
+  -webkit-transform-origin: right bottom;
+}
+
+.ns-hero .divider > div:last-child > div {
+  -webkit-transform: skewX(81deg);
+  -webkit-transform-origin: right bottom;
+}
+
+.ns-hero .bg-1 {
+  background-image: url(../../public/img/light-home-img.jpg);
+}
+
+.ns-hero .bg-1 .divider > div div {
+  background-color: #fff;
+}
+
+.ns-hero .bg-2 {
+  background-color: #fff;
+}
+
+.ns-hero .bg-2 .divider > div div {
+  background-image: url("http://lorempixel.com/1280/720/people/3");
+}
+
+.ns-hero .bg-3 {
+  background-image: url("http://lorempixel.com/1280/720/people/3");
+}
+
+.ns-hero .bg-3 .divider > div div {
+  background-image: url("http://lorempixel.com/1280/720/people/4");
+}
+
+.ns-hero .bg-4 {
+  background-image: url("http://lorempixel.com/1280/720/people/4");
 }
 
 .ns-u-font-light {
