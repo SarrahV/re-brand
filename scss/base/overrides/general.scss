@@ -16,6 +16,16 @@ body {
   // text-shadow: #fff 0px 1px 1px;
 }
 
+ul {
+  font-size: 1.25rem;
+  letter-spacing: .1em;
+  line-height: 41px;
+
+  li {
+
+  }
+}
+
 .ns-container {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   background-size: cover;

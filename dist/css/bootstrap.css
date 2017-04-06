@@ -9331,6 +9331,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul {
+  font-size: 1.25rem;
+  letter-spacing: .1em;
+  line-height: 41px;
+}
+
 .ns-container {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
