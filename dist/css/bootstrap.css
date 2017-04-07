@@ -597,7 +597,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 7;
   line-height: 1.1;
   color: #ee641a;
 }
@@ -9357,13 +9357,6 @@ h1, .h1 {
 @media (min-width: 0) {
   .ns-header {
     max-width: 100%;
-    padding: 0 15px;
-  }
-}
-
-@media (min-width: 576px) {
-  .ns-header {
-    max-width: 540px;
   }
 }
 
@@ -9389,7 +9382,7 @@ a {
   text-decoration: none;
   display: block;
   color: #141416;
-  font-size: 1rem;
+  font-size: .7rem;
   font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -9494,6 +9487,7 @@ header nav .ns-header_logo {
 @media (min-width: 0) {
   header nav .ns-header_logo {
     max-width: 170px;
+    padding-left: 15px;
   }
 }
 
@@ -9526,9 +9520,17 @@ header nav ul li {
   margin-left: 0;
 }
 
+@media (min-width: 0) {
+  header nav ul li {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 15px;
+  }
+}
+
 @media (min-width: 768px) {
   header nav ul li {
     float: left;
+    background-color: transparent;
   }
 }
 
@@ -9565,6 +9567,7 @@ ul.ns-header_menu {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   z-index: 10;
+  padding-top: 15px;
 }
 
 @media (min-width: 768px) {
@@ -9573,6 +9576,7 @@ ul.ns-header_menu {
     display: block !important;
     float: right;
     max-height: none;
+    padding-top: none;
   }
 }
 
@@ -9594,7 +9598,7 @@ ul.ns-header_menu.ns-header--collapse {
   height: 38px;
   width: 38px;
   cursor: pointer;
-  padding: 8px 8px;
+  padding: 8px 15px 8px 8px;
 }
 
 .ns-header_nav-toggle.ns-header--open span:first-child {
@@ -9731,6 +9735,7 @@ footer {
 .ns-footer_links a {
   color: #141416;
   font-size: 0.6875rem;
+  line-height: 1rem;
   font-weight: 500;
   text-transform: capitalize;
   text-decoration: none;
@@ -9834,104 +9839,102 @@ footer {
   background-image: url(../../public/img/light-home-img.jpg);
 }
 
-.ns-hero .ns-hero_bg {
+.ns-hero_bg {
   height: 75vh;
   width: 100%;
-  background: #eee;
-  border-bottom: 1px solid #ccc;
   -webkit-background-size: cover;
           background-size: cover;
   background-attachment: fixed;
   position: relative;
 }
 
-.ns-hero .ns-hero_callout {
+.ns-hero_callout {
   padding-top: 300px;
   margin: 0 auto;
 }
 
 @media (min-width: 0) {
-  .ns-hero .ns-hero_callout {
+  .ns-hero_callout {
     max-width: 100%;
   }
 }
 
 @media (min-width: 576px) {
-  .ns-hero .ns-hero_callout {
+  .ns-hero_callout {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .ns-hero .ns-hero_callout {
+  .ns-hero_callout {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .ns-hero .ns-hero_callout {
+  .ns-hero_callout {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .ns-hero .ns-hero_callout {
+  .ns-hero_callout {
     max-width: 1170px;
   }
 }
 
-.ns-hero .ns-hero_callout-text {
-  max-width: 815px;
-  font-size: 1.5rem;
+.ns-hero_callout-text {
+  max-width: 780px;
 }
 
-.ns-hero .ns-hero_beliefs {
+.ns-hero_text {
   margin: -100px auto 50px auto;
-  font-size: 1.125rem;
 }
 
 @media (min-width: 0) {
-  .ns-hero .ns-hero_beliefs {
+  .ns-hero_text {
     max-width: 100%;
   }
 }
 
 @media (min-width: 576px) {
-  .ns-hero .ns-hero_beliefs {
+  .ns-hero_text {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .ns-hero .ns-hero_beliefs {
+  .ns-hero_text {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .ns-hero .ns-hero_beliefs {
+  .ns-hero_text {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .ns-hero .ns-hero_beliefs {
+  .ns-hero_text {
     max-width: 1170px;
   }
 }
 
-.ns-hero .ns-hero_beliefs ul {
+.ns-hero_text ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
-.ns-hero .ns-hero_beliefs ul li {
+.ns-hero_text ul li {
   position: relative;
   padding-left: 14px;
 }
 
-.ns-hero .ns-hero_beliefs ul li::before {
+.ns-hero_text ul li::before {
   content: "\e950";
   font-family: 'icomoon';
   font-style: normal;
@@ -9945,74 +9948,16 @@ footer {
   z-index: 1;
 }
 
-.ns-hero .ns-hero_beliefs-list {
-  font-size: 1.25rem;
-  letter-spacing: .1em;
-  line-height: 41px;
-}
-
-.ns-hero .divider {
-  width: 100%;
-  height: 250px;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  position: absolute;
-  bottom: -2px;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.ns-hero .divider > div {
-  width: 50%;
-  height: 100%;
-  float: left;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-.ns-hero .divider > div > div {
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-          background-size: cover;
-  height: 100%;
-}
-
-.ns-hero .divider > div:first-child {
-  -webkit-transform: skewX(81deg);
-  -webkit-transform-origin: left bottom;
-}
-
-.ns-hero .divider > div:first-child > div {
-  -webkit-transform: skewX(-81deg);
-  -webkit-transform-origin: left bottom;
-}
-
-.ns-hero .divider > div:last-child {
-  -webkit-transform: skewX(-81deg);
-  -webkit-transform-origin: right bottom;
-}
-
-.ns-hero .divider > div:last-child > div {
-  -webkit-transform: skewX(81deg);
-  -webkit-transform-origin: right bottom;
-}
-
-.ns-hero .ns-hero_bg--light {
+.ns-hero_bg--light {
   background-image: url(../../public/img/light-home-img.jpg);
 }
 
-.ns-hero .ns-hero_bg--light .divider > div div {
-  background-color: #fff;
-}
-
-.ns-hero .bg-2 {
+.ns-hero_text-container {
   background-color: #fff;
   position: relative;
 }
 
-.ns-hero .bg-2::before {
+.ns-hero_text-container::before {
   content: '';
   display: block;
   width: 100%;
@@ -10083,5 +10028,82 @@ footer {
 
 .icon-server-two:before {
   content: "\e952";
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 20rem) {
+  html {
+    font-size: calc(0.8rem + 0.4 * ((100vw - 20rem) / 20));
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+body {
+  line-height: 1.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-top: calc((1.5rem - 2rem) + 1.5rem);
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-top: calc((1.5rem - 1.5rem) + 1.5rem*2);
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin-top: calc((1.5rem - 1.25rem) + 1.5rem*2);
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-top: calc((1.5rem - 1rem) + 1.5rem*2);
+}
+
+h5 {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  margin-top: calc((1.5rem - 0.875rem) + 1.5rem*2);
 }
 /*# sourceMappingURL=bootstrap.css.map */

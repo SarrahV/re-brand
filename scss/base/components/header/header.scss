@@ -7,11 +7,8 @@
 
   @media (min-width: 0) {
     max-width: 100%;
-    padding: 0 15px;
   }
-  @media (min-width: 576px) {
-    max-width: 540px;
-  }
+
   @media (min-width: 768px) {
     max-width: 720px;
   }
@@ -28,7 +25,7 @@ a {
   text-decoration: none;
   display: block;
   color: $not-black;
-  font-size: 1rem;
+  font-size: .7rem;
   font-family: $font-family-sans-serif-heading;
   font-weight: $font-weight-black;
   text-transform: uppercase;
@@ -114,6 +111,7 @@ header {
 
       @media (min-width: 0) {
         max-width: 170px;
+        padding-left: 15px;
       }
 
       @media (min-width: 992px) {
@@ -141,8 +139,14 @@ header {
         float: none;
         margin-left: 0;
 
+        @media (min-width: 0) {
+          background-color: rgba(255, 255, 255, .7);
+          padding: 0 15px;
+        }
+
         @media (min-width: 768px) {
           float: left;
+          background-color: transparent;
         }
 
         a {
@@ -184,12 +188,14 @@ ul.ns-header_menu {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   z-index: 10;
+  padding-top: 15px;
 
   @media(min-width: 768px) {
     border-top: 1px solid $gray;
     display: block!important;
     float: right;
     max-height: none;
+    padding-top: none;
   }
 
   &:before {
@@ -212,7 +218,7 @@ ul.ns-header_menu {
   height: 38px;
   width: 38px;
   cursor: pointer;
-  padding: 8px 8px;
+  padding: 8px 15px 8px 8px;
 
   &.ns-header--open span:first-child {
     transform: rotate(45deg) translate(4.4px, 4.4px);
