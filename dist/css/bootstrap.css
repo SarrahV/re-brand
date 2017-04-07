@@ -9920,6 +9920,31 @@ footer {
   }
 }
 
+.ns-hero .ns-hero_beliefs ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ns-hero .ns-hero_beliefs ul li {
+  position: relative;
+  padding-left: 14px;
+}
+
+.ns-hero .ns-hero_beliefs ul li::before {
+  content: "\e950";
+  font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  font-size: 3px;
+  color: #141416;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+}
+
 .ns-hero .ns-hero_beliefs-list {
   font-size: 1.25rem;
   letter-spacing: .1em;
@@ -9984,6 +10009,7 @@ footer {
 
 .ns-hero .bg-2 {
   background-color: #fff;
+  position: relative;
 }
 
 .ns-hero .bg-2::before {
