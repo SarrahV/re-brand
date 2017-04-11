@@ -31,6 +31,7 @@ a {
   text-transform: uppercase;
   letter-spacing: .1em;
 
+
   &:hover, :focus {
     text-decoration: none;
     color: $brand-primary;
@@ -188,7 +189,6 @@ ul.ns-header_menu {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   z-index: 10;
-  padding-top: 15px;
 
   @media(min-width: 768px) {
     border-top: 1px solid $gray;

@@ -9567,7 +9567,6 @@ ul.ns-header_menu {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   z-index: 10;
-  padding-top: 15px;
 }
 
 @media (min-width: 768px) {
@@ -9844,12 +9843,12 @@ footer {
   width: 100%;
   -webkit-background-size: cover;
           background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
 }
 
 .ns-hero_callout {
-  padding-top: 300px;
+  padding-top: 175px;
   margin: 0 auto;
 }
 
